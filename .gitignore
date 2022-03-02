@@ -2,13 +2,18 @@
 *.iml
 .idea
 
-# npm
-node_modules
-package-lock.json
-
 # build
 main.js
 *.js.map
 
 # obsidian
 data.json
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
