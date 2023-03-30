@@ -1,6 +1,6 @@
 {
   "name": "obsidian-better-math",
-  "version": "0.14.0",
+  "version": "0.14.1",
   "description": "This is a sample plugin for Obsidian (https://obsidian.md)",
   "keywords": [],
   "license": "MIT",
@@ -36,8 +36,5 @@
     "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   },
-  "packageManager": "yarn@3.5.0",
-  "dependencies": {
-    "mathjax": "4.0.0-alpha.1"
-  }
+  "packageManager": "yarn@3.5.0"
 }
