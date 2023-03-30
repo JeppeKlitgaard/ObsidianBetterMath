@@ -1,8 +1,8 @@
 {
 	"id": "obsidian-better-math",
 	"name": "Better Math",
-	"version": "0.13.0",
-	"minAppVersion": "0.13.28",
+	"version": "0.14.0",
+	"minAppVersion": "1.0.0",
 	"description": "Implements a variety of tools to improve the math writing workflow in Obsidian.",
 	"author": "Jeppe Klitgaard",
 	"authorUrl": "https://jeppe.science",
