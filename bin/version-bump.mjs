@@ -1,7 +1,7 @@
-import { readFile, writeFile, access } from "fs/promises";
+// Usage: yarn vup {major,minor,patch}
+import { readFile, writeFile } from "fs/promises";
 import { promisify } from "util";
 import { exec } from "child_process";
-import { F_OK } from "fs";
 
 async function pExec(cmd) {
   try {
@@ -49,14 +49,8 @@ async function pExec(cmd) {
 
   console.log("Adding to git");
   await pExec(
-    "git add manifest.json package.json versions.json .yarn/versions"
+    "git add manifest.json manifest-beta.json package.json versions.json .yarn/versions"
   );
-
-  try {
-    await access("manifest-beta.json", F_OK)
-    await pExec("git add manifest-beta.json")
-
-  } catch {}
 
   console.log("Commiting to git");
   await pExec(`git commit -m "release(chore): ${targetVersion}"`);
