@@ -49,7 +49,7 @@ async function pExec(cmd) {
 
   console.log("Adding to git");
   await pExec(
-    "git add manifest.json manifest-beta.json package.json versions.json .yarn/versions"
+    "git add manifest.json package.json versions.json .yarn/versions"
   );
 
   console.log("Commiting to git");
